@@ -24,7 +24,7 @@ export const RevenueFilter: React.FC = () => {
 	return (
 		<>
 			<Text span small type='secondary'>
-				Оборот компании
+				Выручка компании
 			</Text>
 
 			<Checkbox.Group value={[]}>

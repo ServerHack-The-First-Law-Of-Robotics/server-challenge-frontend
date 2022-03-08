@@ -6,7 +6,11 @@ import {
 	Page,
 	Spacer,
 } from '@geist-ui/core';
-import { Filters } from 'features';
+import {
+	CompaniesList,
+	Filters,
+	SortSelect,
+} from 'features';
 
 export type SearchOption = {
 	label: string;
@@ -40,6 +44,8 @@ const mockOptions: SearchOption[] = [
 	},
 ];
 
+import { companies } from './companies';
+
 export const SearchPage: React.FC = () => {
 	//model
 	const [options, setOptions] = React.useState<SearchOption[]>(mockOptions);
@@ -62,6 +68,14 @@ export const SearchPage: React.FC = () => {
 				<Spacer h={1} />
 
 				<Filters />
+
+				<Spacer h={1} />
+
+				<SortSelect />
+
+				<Spacer h={1} />
+
+				<CompaniesList companies={companies} />
 			</Page.Body>
 		</Page>
 	);
