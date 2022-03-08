@@ -14,8 +14,10 @@
     "effector": "22.2.0",
     "effector-react": "22.0.6",
     "effector-root": "^1.4.0",
+    "effector-storage": "^5.0.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-use": "^17.3.2"
   },
   "devDependencies": {
     "@types/express": "4.17.0",
